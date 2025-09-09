@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity(), CoffeeListener {
         Log.d(TAG, "onDestroy")
     }
 
-    // CoffeeListener implementation
+    // CoffeeListener implementation: replace with DetailFragment dynamically
     override fun onSelected(id: Int) {
         findViewById<FragmentContainerView>(R.id.fragment_container).let { container ->
             val detailFragment = DetailFragment.newInstance(id)
@@ -81,4 +81,3 @@ class MainActivity : AppCompatActivity(), CoffeeListener {
         private const val TAG = "MainActivity"
     }
 }
-
